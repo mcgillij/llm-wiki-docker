@@ -1,0 +1,18 @@
+# 3dSpace Wiki — MkDocs Material served via Docker
+# Usage: cd ~/workspace/wiki && docker compose up [-d]
+# Preview: http://localhost:8080
+# Stop:    docker compose down
+
+services:
+  wiki:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      # Mount the content directory for hot-reload (changes reflect immediately)
+      - ./content:/wiki/content
+      # Mount config file so edits to mkdocs.yml also take effect
+      - ./mkdocs.yml:/wiki/mkdocs.yml:ro
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+    restart: unless-stopped

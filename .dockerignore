@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.github/
+.vscode/
+.idea/
+site/
+*.md
+!mkdocs.yml
+!README.md
+preprocess_wikilinks.py
