@@ -55,15 +55,99 @@ nav:
   - Log: log.md
   - Schema: SCHEMA.md
   - Entities:
-    - Autoloads & Singletons:
+    - Core Game Managers:
+      - Galaxy Generator: entities/galaxygenerator.md
+      - Galaxy Navigator (GN): entities/gn.md
+      - Gate Manager: entities/gatemanager.md
+      - Jump Manager (JM): entities/jm.md
+      - Level Manager: entities/levelmanager.md
+      - Spawn Manager: entities/spawnmanager.md
+      - Title Screen: entities/title-screen.md
+    - Framework Services:
+      - FW Trackable Registry: entities/fw-trackableregistry.md
       - Faction Manager: entities/faction-manager.md
       - Patrol Manager: entities/patrol-manager.md
       - NPC Simulation Service: entities/npc-simulation-service.md
       - FW Config Service: entities/fw-config-service.md
       - FW Scene Router: entities/fw-scene-router.md
       - FW State Machine: entities/fw-state-machine.md
-    - Core Systems:
-      - Flight Controller: entities/flight-controller.md
+      - FW Camera Service: entities/fw-camera-service.md
+    - Multiplayer Replication:
+      - Ship Controller (FlightController): entities/flight-controller.md
+      - Remote Ship Controller: entities/remoteshipcontroller.md
+      - Shared Flight Model: entities/sharedflightmodel.md
+      - Snapshot Buffer: entities/snapshotbuffer.md
+      - Ship Visual Proxy: entities/shipvisualproxy.md
+      - Ship Replication Service (SRS): entities/srs.md
+      - Avatar Replication Service (AVRS): entities/avrs.md
+      - Multiplayer Session (MPS): entities/mps.md
+      - Network Avatar Manager: entities/network-avatar-manager.md
+    - World State & Services:
+      - Server World State Service (SWS): entities/sws.md
+      - Ship Config Service (SCS): entities/scs.md
+      - Player Identity Manager (PIM): entities/pim.md
+      - Player State Manager (PSM): entities/psm.md
+    - Economy & Discovery:
+      - Credits Manager (CM): entities/cm.md
+      - Resource Ledger Manager (RLM): entities/rlm.md
+      - Trade Service (TS): entities/ts.md
+      - Station Market Popup: entities/station-market-popup.md
+      - Discovery Manager (DM): entities/dm.md
+      - Discovery Atlas Card: entities/discovery-atlas-card.md
+      - Discovery Journal: entities/discovery-journal.md
+    - Galaxy Management:
+      - Galaxy Save Manager (GSM): entities/gsm.md
+      - Galaxy System Registry (GSR): entities/gsr.md
+    - NPC Systems:
+      - NPC Promotion Service: entities/npcpromotionservice.md
+      - NPC Replication Orchestrator: entities/npcreplicationorchestrator.md
+      - NPC World Orchestrator: entities/npcworldorchestrator.md
+    - World Runtime:
+      - World Runtime Manager: entities/worldruntimemanager.md
+      - Procedural Level Builder: entities/procedurallevelbuilder.md
+      - Star Generator: entities/stargenerator.md
+      - Station Docking Manager: entities/stationdockingmanager.md
+      - System Event Runtime: entities/systemeventruntime.md
+    - Network & Replication Services:
+      - Network Ship Manager: entities/networkshipmanager.md
+      - Network Snapshot Generator: entities/networksnapshotgenerator.md
+      - Prediction Service: entities/predictionservice.md
+      - Player Possession Service: entities/playerpossessionservice.md
+      - Ship Snapshot Codec: entities/ship-snapshot-codec.md
+    - Galaxy & Map Services:
+      - Galaxy Cache Service: entities/galaxycacheservice.md
+      - Local System Map Manager: entities/localsystemmapmanager.md
+      - Galaxy Map 3D: entities/galaxy-map-3d.md
+    - Combat & Targeting:
+      - Targeting Manager: entities/targetingmanager.md
+      - Combat Targeting Solver: entities/combattargetingsolver.md
+      - Ship Weapons: entities/ship-weapons.md
+    - Chat & Communication:
+      - Chat Service: entities/chatservice.md
+    - Feed & Events:
+      - Feed Event Service (FES): entities/feed-event-service.md
+    - Framework UI Services:
+      - FW Input Rebind Service: entities/fw_inputrebindservice.md
+      - FW Platform Detection: entities/fw_platform.md
+      - FW Resource Cache: entities/fw_resourcecache.md
+      - FW Debug Utilities: entities/fw_debug.md
+      - FW Context Menu: entities/fw_contextmenu.md
+      - FW Modal Overlay: entities/fw_modaloverlay.md
+      - Toast Notification: entities/toast-notification.md
+      - FPS HUD Overlay: entities/fps-hud-overlay.md
+      - HUD Jobs Module: entities/hud-jobs-module.md
+    - Surface Instruments:
+      - Gas Sniffer: entities/gas-sniffer.md
+      - Lidar Mapper: entities/lidar-mapper.md
+      - Magnetometer Drifter: entities/magnetometer-drifter.md
+      - Radiation Meter: entities/radiation-meter.md
+      - Seismic Thumper: entities/seismic-thumper.md
+      - Thermal Penetrator: entities/thermal-penetrator.md
+      - Gravity Ball: entities/gravity-ball.md
+      - Planet Science Dossier: entities/planet-science-dossier.md
+      - Seismograph Display: entities/seismograph-display.md
+    - Player Surface Interaction:
+      - Surface Interact Service: entities/player-surface-interaction.md
   - Concepts:
     - Architecture & Systems:
       - Project Architecture: concepts/project-architecture.md
@@ -72,16 +156,36 @@ nav:
       - Networking & Multiplayer: concepts/networking-multiplayer.md
       - Ship Systems: concepts/ship-systems.md
       - FW Framework Addon: concepts/fw-framework-addon.md
+      - FW Framework Additions: concepts/fw-framework-additions.md
       - UI & HUD Subsystems: concepts/ui-hud-subsystems.md
       - VFX & Visual Effects: concepts/vfx-visual-effects.md
+      - Feed System: concepts/feed-system.md
     - World & Content:
       - World Generation: concepts/world-generation.md
+      - Galaxy Sector Streaming: concepts/galaxy-sector-streaming.md
+      - Surface Features Generation: concepts/surface-features-generation.md
       - Backdrop System: concepts/backdrop-system.md
+      - Sky Parameter System: concepts/sky-parameter-system.md
       - Factions & Lore: concepts/factions-lore.md
       - Ships, Parts & Lore: concepts/ships-parts-lore.md
       - Weapons & Lore: concepts/weapons-lore.md
       - NPCs & Patrols: concepts/npcs-patrols-lore.md
       - Stations & Megastructures: concepts/stations-megastructures.md
       - Galaxy & Celestial Bodies: concepts/galaxy-celestial-bodies.md
+    - Surface Operations:
+      - Moon Landing & Surface Interaction: concepts/moon-landing-surface-interaction.md
+      - Player Surface Interaction: concepts/player-surface-interaction.md
+    - Economy & Exploration:
       - Economy & Trade: concepts/economy-trade.md
+      - Mining & Limpet Systems: concepts/mining-limpet-systems.md
       - Discovery & Exploration: concepts/discovery-exploration.md
+    - Multiplayer & Replication:
+      - Galaxy Navigation Routing: concepts/galaxy-navigation-routing.md
+      - NPC Replication & World Orchestration: concepts/npc-replication-world-orchestration.md
+      - Event Replication System: concepts/event-replication-system.md
+    - Player Systems:
+      - Player Possession System: concepts/player-possession-system.md
+      - Ship Systems Coordinator: concepts/ship-systems-coordinator.md
+      - FPS HUD Instruments: concepts/fps-hud-instruments.md
+    - Local Simulation:
+      - Local System Traffic: concepts/local-system-traffic.md
